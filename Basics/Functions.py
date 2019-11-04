@@ -24,6 +24,16 @@ def multi_add(*args):
         result = result + x
     return result
 
+# Implement the Fibonacci algorithm
+def fibonacci(n):
+    "Return a Fibonacci series up to n"
+    ret = []
+    a, b = 0, 1
+    while b < n:
+        ret.append(b)
+        a, b = b, a + b
+    return ret
+
 # Call functions here
 func1()
 print(func1()) # Print the return value from the function
@@ -34,3 +44,7 @@ print(power(2))
 print(power(2, 3))
 print(power(x=3, num=2))
 print(multi_add(4, 5, 10, 4))
+
+print(fibonacci(10))
+print(fibonacci(100))
+print(fibonacci(1000))
